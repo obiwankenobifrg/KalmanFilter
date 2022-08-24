@@ -8,20 +8,24 @@
 class Sensors{
 
     private:
-    double mean;
-    double standarddev;
-    double noise;
-    double theta;
-
+    double meanTheta;
+    double stdDevTheta;
+    double meanLocate;
+    double stdDevLocate;
+    double noiseTheta;
+    double noiseX;
+    double noiseY;
+    double measureTheta;
+    double measureX;
+    double measureY;
     public:
     Sensors();
-    void setProtractor(double m , double s);
+    void measureUpdate(double sysX, double sysY, double sysTheta);
     double NoiseGet();
-    void Protractor(double sysTheta);
-    double updateSensor();
-    void setTheta(double t);
-    void setvTheta(double v);
+    void setSensor(double meanTheta , double stdTheta, double meanLocate, double stdLocate);
     double getTheta();
+    double getX();
+    double getY();
 
 };
 

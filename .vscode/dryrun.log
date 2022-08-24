@@ -1,0 +1,15 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/fragoa/Documents/Codes/KalmanFilter'
+g++ -g -Wall -c -o main.o main.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o Field.o Field.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o World.o World.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o Robot.o Robot.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o HelpWindow.o HelpWindow.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o Util.o Util.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o Planner.o Planner.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o Model.o Model.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -c -o Sensors.o Sensors.cpp `pkg-config --cflags --libs opencv4`
+g++ -g -Wall -o main main.o Field.o World.o Robot.o HelpWindow.o Util.o Planner.o  Model.o Sensors.o `pkg-config --cflags --libs opencv4`
+./main
+make: Leaving directory '/home/fragoa/Documents/Codes/KalmanFilter'
+ 
