@@ -1,5 +1,5 @@
 #include "Sensors.hpp"
-#include "Util.hpp"
+
 
 Sensors::Sensors()
 {
@@ -11,6 +11,7 @@ void Sensors::setSensor(double mT , double stdT, double mL, double stdL)
     stdDevTheta = stdT;
     meanLocate = mL ;
     stdDevLocate = stdL;
+
 }
 // --  Make Noise for Theta
 void Sensors::measureUpdate(double sysX, double sysY, double sysTheta)
@@ -41,4 +42,14 @@ double Sensors::getX()
 double Sensors::getY()
 {
     return measureY;
+}
+// -- return standard deviation
+double Sensors::getStdlocate()
+{
+    return stdDevLocate;
+}
+
+double Sensors::getStdTheta()
+{
+    return stdDevTheta;
 }

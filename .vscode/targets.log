@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Wed Aug 24 12:05:56 2022
+# Make data base, printed on Wed Aug 24 14:20:26 2022
 
 # Variables
 
@@ -165,6 +166,7 @@ USERNAME = fragoa
 # environment
 GNOME_SETUP_DISPLAY = :1
 # environment
+ 
 LC_TELEPHONE = en_US.UTF-8
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
@@ -285,10 +287,10 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2050, inode 34875876): 24 files, no impossibilities.
-
  
-# 24 files, no impossibilities in 1 directories.
+# . (device 2050, inode 34875876): 26 files, no impossibilities.
+
+# 26 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -298,6 +300,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
+
+# Not a target:
+Filter.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Robot.o:
@@ -314,7 +322,7 @@ Model.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-06 01:39:04
+#  Last modified 2022-08-24 14:20:22.096880617
 #  File has been updated.
 #  Successfully updated.
 
@@ -328,6 +336,7 @@ clean:
 # Not a target:
 HelpWindow.o:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -366,7 +375,7 @@ main.cpp:
 #  File has been updated.
 #  Successfully updated.
 
-main: main.o Field.o World.o Robot.o HelpWindow.o Util.o Planner.o Model.o Sensors.o
+main: main.o Field.o World.o Robot.o HelpWindow.o Util.o Planner.o Model.o Sensors.o Filter.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -374,7 +383,7 @@ main: main.o Field.o World.o Robot.o HelpWindow.o Util.o Planner.o Model.o Senso
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/7=0%
 #  recipe to execute (from 'Makefile', line 12):
-	$(CC) $(CFLAGS) -o main main.o Field.o World.o Robot.o HelpWindow.o Util.o Planner.o  Model.o Sensors.o $(lIBS)
+	$(CC) $(CFLAGS) -o main main.o Field.o World.o Robot.o HelpWindow.o Util.o Planner.o  Model.o Sensors.o  Filter.o $(lIBS)
 
 # Not a target:
 Util.o:
@@ -384,6 +393,7 @@ Util.o:
 
 main.o: main.cpp
 #  Implicit rule search has been done.
+ 
 #  Implicit/static pattern stem: 'main'
 #  File does not exist.
 #  File has been updated.
@@ -428,19 +438,20 @@ Field.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=17/1024=2%, Rehash=0, Collisions=0/44=0%
+# Load=18/1024=2%, Rehash=0, Collisions=0/46=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 43 / storage = 393 B / avg = 9 B
-# current buf: size = 8162 B / used = 393 B / count = 43 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 46 / storage = 424 B / avg = 9 B
+# current buf: size = 8162 B / used = 424 B / count = 46 / avg = 9 B
 
-# strcache performance: lookups = 57 / hit rate = 24%
+# strcache performance: lookups = 60 / hit rate = 23%
+ 
 # hash-table stats:
-# Load=43/8192=1%, Rehash=0, Collisions=0/57=0%
-# Finished Make data base on Wed Aug 24 12:05:56 2022
+# Load=46/8192=1%, Rehash=0, Collisions=0/60=0%
+# Finished Make data base on Wed Aug 24 14:20:26 2022
 
  
